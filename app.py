@@ -1,7 +1,7 @@
 import random
 
 lista_num_sorteado = []
-num_limite = 42
+num_limite = 100
 num_secreto = None
 tentativas = 1
 
