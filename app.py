@@ -78,7 +78,8 @@ def main():
             if acertou:
                 resposta = input('\nDeseja jogar novamente? (s/n): ').lower()
                 if resposta == 's':
-                    print('\n' + '='*40 + '\n')
+                    print ("\nReiniciando o jogo...\n")
+                    print('='*40 + '\n')
                     reiniciar_jogo()
                 else:
                     exibir_texto_na_tela('\nObrigado por jogar! Até a próxima!')
