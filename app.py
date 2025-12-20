@@ -28,7 +28,7 @@ def verificar_chute(chute):
     global tentativas, num_secreto
     
     if chute == num_secreto:
-        exibir_texto_na_tela('\n🎉 Acertou!')
+        exibir_texto_na_tela('\nAcertou!')
         palavra_tentativa = 'tentativas' if tentativas > 1 else 'tentativa'
         mensagem_tentativas = f'Você descobriu o número secreto com {tentativas} {palavra_tentativa}!'
         exibir_texto_na_tela(mensagem_tentativas)
