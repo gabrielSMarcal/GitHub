@@ -19,8 +19,8 @@ def exibir_texto_na_tela(mensagem):
 
 def texto_inicial():
     """Exibe as mensagens iniciais do jogo."""
-    exibir_texto_na_tela('=== Jogo do número secreto! ===')
-    exibir_texto_na_tela(f'Escolha um número entre 1 e {num_limite}!')
+    exibir_texto_na_tela('=== Jogo do Número secreto! ===')
+    exibir_texto_na_tela(f'Escolha um Número entre 1 e {num_limite}!')
 
 
 def verificar_chute(chute):
