@@ -19,7 +19,6 @@ def exibir_texto_na_tela(mensagem):
 
 def texto_inicial():
     """Exibe as mensagens iniciais do jogo."""
-    exibir_texto_na_tela('=== Jogo do Número secreto! ===')
     exibir_texto_na_tela(f'Escolha um Número entre 1 e {num_limite}!')
 
 
@@ -61,6 +60,7 @@ def main():
     global num_secreto
     
     num_secreto = gerar_num_aleatorio()
+    print('=== Jogo do Número secreto! ===')
     texto_inicial()
     
     jogo_ativo = True
