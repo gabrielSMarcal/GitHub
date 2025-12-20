@@ -24,7 +24,7 @@ def texto_inicial():
 
 
 def verificar_chute(chute):
-    """Verifica se o chute está correto e retorna o resultado."""
+    """Verifica se o chute está correto e retorna o resultado"""
     global tentativas, num_secreto
     
     if chute == num_secreto:
