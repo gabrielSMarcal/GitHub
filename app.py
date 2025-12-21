@@ -8,22 +8,26 @@ tentativas = 1
 
 def gerar_num_aleatorio():
     """Gera um número aleatório entre 1 e num_limite."""
+    
     global num_limite
     return random.randint(1, num_limite)
 
 
 def exibir_texto_na_tela(mensagem):
     """Exibe texto na tela."""
+    
     print(mensagem)
 
 
 def texto_inicial():
     """Exibe as mensagens iniciais do jogo."""
+    
     exibir_texto_na_tela(f'Escolha um Número entre 1 e {num_limite}!')
 
 
 def verificar_chute(chute):
     """Verifica se o chute está correto e retorna o resultado"""
+    
     global tentativas, num_secreto
     
     if chute == num_secreto:
@@ -43,12 +47,14 @@ def verificar_chute(chute):
 
 def limpar_tela():
     """Limpa a tela (opcional)."""
+    
     import os
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
 def reiniciar_jogo():
     """Reinicia o jogo com um novo número secreto."""
+    
     global num_secreto, tentativas
     num_secreto = gerar_num_aleatorio()
     tentativas = 1
@@ -57,6 +63,7 @@ def reiniciar_jogo():
 
 def main():
     """Função principal do jogo."""
+    
     global num_secreto
     
     num_secreto = gerar_num_aleatorio()

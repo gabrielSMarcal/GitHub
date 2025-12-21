@@ -23,3 +23,5 @@
 #Teste de Stash   1: 21/12 08:16
 
 #Teste de Restore 1: 21/12 08:32
+
+#Commit v0.1.1    1: 21/12 08:54
