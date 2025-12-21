@@ -73,6 +73,7 @@ def main():
     jogo_ativo = True
     
     while jogo_ativo:
+        
         try:
             chute = int(input('\nDigite seu chute: '))
             
@@ -84,16 +85,19 @@ def main():
             
             if acertou:
                 resposta = input('\nDeseja jogar novamente? (s/n): ').lower()
+                
                 if resposta == 's':
                     print ("\nReiniciando o jogo...\n")
                     print('='*40 + '\n')
                     reiniciar_jogo()
+                    
                 else:
                     exibir_texto_na_tela('\nObrigado por jogar! Até a próxima!')
                     jogo_ativo = False
         
         except ValueError:
             exibir_texto_na_tela('Por favor, digite um número válido!')
+            
         except KeyboardInterrupt:
             exibir_texto_na_tela('\n\nJogo interrompido. Até logo!')
             jogo_ativo = False
